@@ -10,7 +10,7 @@ cp ./.github/secrets/profile_key.mobileprovision ~/Library/MobileDevice/Provisio
 
 
 security create-keychain -p "" build.keychain
-security import ./.github/secrets/Cer_dis.p12 -t agg -k ~/Library/Keychains/build.keychain -P "trial@pp" -A
+security import ./.github/secrets/Cer_dis.p12 -t agg -k ~/Library/Keychains/build.keychain -P "supersong@pp" -A
 
 security list-keychains -s ~/Library/Keychains/build.keychain
 security default-keychain -s ~/Library/Keychains/build.keychain
